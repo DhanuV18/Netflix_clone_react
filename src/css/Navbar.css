@@ -22,9 +22,9 @@
 .navbar__logo{
     position: fixed;
     left: 0;
-    top: 20px;
+    top: 5px;
     object-fit: contain;
-    width: 80px;
+    width: 100px;
     padding-left: 20px;
     cursor: pointer;
 }

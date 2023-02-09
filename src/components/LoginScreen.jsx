@@ -26,7 +26,7 @@ function LoginScreen() {
                       <h3 className='LoginScreen__heading-3'>Ready to watch? Enter your email to create or restart your membership.</h3>
                       <div className='LoginScreen__input'>
                         <form>
-                          <input type="email" placeHolder="Email Address" className='LoginScreen__input-text'/>
+                          <input type="email" placeholder="Email Address" className='LoginScreen__input-text'/>
                           <button onClick={() => setSignIn(true)} className='LoginScreen__getStarted'>
                             Get Started
                           </button>
