@@ -5,18 +5,15 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
-import { HashRouter } from 'react-router-dom';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <HashRouter>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </HashRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 
