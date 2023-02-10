@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
 import HomeScreen from './components/HomeScreen';
 import LoginScreen from './components/LoginScreen';
@@ -31,26 +31,23 @@ function App() {
   }, [dispatch])
     
   return (
-    
-     <HashRouter basename="/">
-      <div className="App">
-        
-        <Router basename="/netflix_clone">
-            {
-              !user ? (
-                <LoginScreen />
-              ) : (
-                <Routes> 
-                    <Route path='/profile' element={<ProfileScreen />} />                        
-                    <Route exact path='/netflix_clone' element={<HomeScreen />} />
-                </Routes>      
-              )
-            }
+    <div className="App">
       
-        </Router>
-        
-      </div>
-    </HashRouter>
+      <Router>
+          {
+            !user ? (
+               <LoginScreen />
+            ) : (
+              <Routes> 
+                  <Route path='/profile' element={<ProfileScreen />} />                        
+                  <Route path='/' element={<HomeScreen />} />
+              </Routes>      
+            )
+          }
+    
+      </Router>
+      
+    </div>
   );
 }
 
