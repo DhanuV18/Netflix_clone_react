@@ -31,6 +31,7 @@ function App() {
   }, [dispatch])
     
   return (
+     <HashRouter basename="/">
     <div className="App">
       
       <Router>
@@ -48,6 +49,7 @@ function App() {
       </Router>
       
     </div>
+    </HashRouter>
   );
 }
 
