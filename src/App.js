@@ -42,7 +42,7 @@ function App() {
               ) : (
                 <Routes> 
                     <Route path='/profile' element={<ProfileScreen />} />                        
-                    <Route path='/' element={<HomeScreen />} />
+                    <Route exact path='/netflix_clone' element={<HomeScreen />} />
                 </Routes>      
               )
             }
