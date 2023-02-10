@@ -33,23 +33,23 @@ function App() {
   return (
     
      <HashRouter basename="/">
-    <div className="App">
+      <div className="App">
+        
+        <Router>
+            {
+              !user ? (
+                <LoginScreen />
+              ) : (
+                <Routes> 
+                    <Route path='/profile' element={<ProfileScreen />} />                        
+                    <Route path='/' element={<HomeScreen />} />
+                </Routes>      
+              )
+            }
       
-      <Router>
-          {
-            !user ? (
-               <LoginScreen />
-            ) : (
-              <Routes> 
-                  <Route path='/profile' element={<ProfileScreen />} />                        
-                  <Route path='/' element={<HomeScreen />} />
-              </Routes>      
-            )
-          }
-    
-      </Router>
-      
-    </div>
+        </Router>
+        
+      </div>
     </HashRouter>
   );
 }
