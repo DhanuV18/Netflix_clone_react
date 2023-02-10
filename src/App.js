@@ -35,7 +35,7 @@ function App() {
      <HashRouter basename="/">
       <div className="App">
         
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             {
               !user ? (
                 <LoginScreen />
