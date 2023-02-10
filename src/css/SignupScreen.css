@@ -23,15 +23,14 @@
 }
 
 .signup__btn{
-    padding: 16px 20px;
+    padding: 1.5rem;
     color: white;
     background-color: #e50714;
     border-radius: 5px;
-    cursor: pointer;
     outline: none;
     margin-top: 20px;
-    border: 0;
     font-weight: 400;
+    font-size: 1.8rem;
 }
 
 .signupScreen__heading{
