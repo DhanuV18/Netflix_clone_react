@@ -35,7 +35,7 @@ function App() {
      <HashRouter basename="/">
       <div className="App">
         
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename="/netflix_clone">
             {
               !user ? (
                 <LoginScreen />
