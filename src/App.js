@@ -35,14 +35,14 @@ function App() {
       
       <Router>
           {
-            !user ? (
-               <LoginScreen />
-            ) : (
+            // !user ? (
+            //    <LoginScreen />
+            // ) : (
               <Routes> 
                   <Route path='/profile' element={<ProfileScreen />} />                        
                   <Route path='/' element={<HomeScreen />} />
               </Routes>      
-            )
+            // )
           }
     
       </Router>
